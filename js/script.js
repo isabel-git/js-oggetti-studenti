@@ -42,3 +42,21 @@ for (var i = 0; i < studenti.length; i++) {
   }
 
 };
+
+// TERZO EX
+var nomeUte = prompt("inserisci nome");
+var cognomeUte = prompt("inserisci cognome");
+var etaUte = parseInt(prompt("inserisci età"));
+
+console.log("input utente: " + nomeUte + " " + cognomeUte + " " + etaUte);
+
+// pusho nel array il nuovo oggetto
+studenti.push(
+  {
+    "nome": nomeUte,
+    "cognome": cognomeUte,
+    "eta": etaUte
+  }
+);
+
+console.log(studenti);
