@@ -10,8 +10,35 @@ var studente = {
   "eta": 8
 }
 
-// stampo proprietà
+// stampo proprietà e valore
 for (var key in studente) {
-  
+
   console.log((key + ": " + studente[key]));
 }
+
+// SECONDO EX
+var studenti = [
+  {
+    "nome": 'Lisa',
+    "cognome": 'Simpson',
+    "eta": 8
+  },
+  {
+    "nome": 'Bart',
+    "cognome": 'Simpson',
+    "eta": 10
+  },
+  {
+    "nome": 'Maggie',
+    "cognome": 'Simpson',
+    "eta": 1
+  }
+];
+
+// stampo nome e cognome
+for (var i = 0; i < studenti.length; i++) {
+  for (var key in studenti[i]) {
+    console.log(studenti[i].nome + " " + studenti[i].cognome);
+  }
+
+};
